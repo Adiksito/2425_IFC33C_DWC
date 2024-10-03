@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        var a = "Hola"; //String
+        var b = null; //TIPO NULL
+        var c; //TIPO UNDEFINED
+        var d = false // TIPO BOOLEAN
+        var e = 4; // TIPO NUMERO
+        var f = 5.6; // TIPO NUMERO
+
+        //TIPO OBJETO
+        var g = {
+            Nombre:"Alan",
+            Apellidos:"Adamski"
+        };
+
+        []
+
+        console.log(a,b,c,d,e,f,g);
+        console.log(typeof a);
+        console.log(typeof b);
+        console.log(typeof c);
+        console.log(typeof d);
+        console.log(typeof e);
+        console.log(typeof f);
+        console.log(typeof g);
+
+        // Variables dinámicas (pueden cambiar)
+        a = 3;
+        console.log(a);
+        console.log(typeof a);
+        
+        // var --> Declarar Variables
+        // ES6 --> Declarar variables con let o const
+
+        // ÁMBITO
+        let p1= "hola";
+        function prueba(p1){
+            p1 = "Adios";
+            console.log(p1);
+        }
+        prueba();
+        console.log(p1);
+
+         z= 99; //Mala Practica!! Provoca Hoisting! Utilizar let
+
+        console.log(z);
+        
+    </script>
+</body>
+</html>

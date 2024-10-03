@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        var x = "Hola"; // Comillas dobles ("")
+        var y = 'Hola'; // Comillas Simples ('')
+        var z = `Hola`; // Comillas acento (``)
+        console.log(x);
+        console.log(y);
+        console.log(z);
+
+        // Las comillas dobles y simples no son multilinea
+
+        var w = "Hola, " + 
+        "que tal?"
+
+        console.log(w);
+
+        var q = w.concat(" Muy bien, y tu?");
+
+        console.log(q);
+
+        var t = "Hola \"Alan\""
+        console.log(t)
+
+        console.log(x.length); //Length indica el numero de caràcteres
+
+        // Podemos recorrer los string con un bucle
+        for (i=0;i<=x.length - 1 ;i++){
+            console.log(x[i]);
+        }
+
+        //letra 3 de la palabra hola
+        console.log(x.charAt(3));
+
+        //UTF 16
+        console.log(x.charCodeAt(3));
+
+        // INDEX
+        console.log(x.indexOf("ol"));
+
+        console.log(x.search("l"));
+
+        console.log(x.includes("ol"));
+
+    </script>
+</body>
+</html>
